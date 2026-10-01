@@ -8,5 +8,11 @@ jobs:
         steps:
             - name: Say hello
               run: echo "Hello, World!"
+
+    echo-goodbye:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Passed step
+              run: exit 0
             - name: Say goodbye
               run: echo "Goodbye!"
